@@ -2751,11 +2751,11 @@ async function bestIP(request, env, txt = 'ADD.txt') {
 
                 console.log(`反代IP列表解析完成，端口${targetPort}匹配到${validIps.length}个有效IP`);
 
-                // 如果超过512个IP，随机选择512个
-                if (validIps.length > 512) {
+                // 如果超过512个IP，随机选择1000个
+                if (validIps.length > 1000) {
                     const shuffled = [...validIps].sort(() => 0.5 - Math.random());
-                    const selectedIps = shuffled.slice(0, 512);
-                    console.log(`IP数量超过512个，随机选择了${selectedIps.length}个IP`);
+                    const selectedIps = shuffled.slice(0, 1000);
+                    console.log(`IP数量超过1000个，随机选择了${selectedIps.length}个IP`);
                     return selectedIps;
                 } else {
                     return validIps;
@@ -3615,7 +3615,7 @@ async function bestIP(request, env, txt = 'ADD.txt') {
             const displayIPs = originalIPs.slice(0, displayCount);
             
             // 更新显示信息
-            if (originalIPs.length <= 16) {
+            if (originalIPs.length <= 20) {
                 ipDisplayInfo.textContent = \`显示全部 \${originalIPs.length} 个IP\`;
                 showMoreSection.style.display = 'none';
             } else {
@@ -3712,8 +3712,8 @@ async function bestIP(request, env, txt = 'ADD.txt') {
             saveBtn.textContent = '保存中...';
             
             try {
-                // 只保存前16个最优IP
-                const saveCount = Math.min(ipsToSave.length, 16);
+                // 只保存前20个最优IP
+                const saveCount = Math.min(ipsToSave.length, 20);
                 const ips = ipsToSave.slice(0, saveCount).map(result => result.display);
                 
                 const response = await fetch('?action=save', {
@@ -3764,8 +3764,8 @@ async function bestIP(request, env, txt = 'ADD.txt') {
             appendBtn.textContent = '追加中...';
             
             try {
-                // 只追加前16个最优IP
-                const saveCount = Math.min(ipsToAppend.length, 16);
+                // 只追加前20个最优IP
+                const saveCount = Math.min(ipsToAppend.length, 20);
                 const ips = ipsToAppend.slice(0, saveCount).map(result => result.display);
                 
                 const response = await fetch('?action=append', {
@@ -4189,7 +4189,7 @@ async function bestIP(request, env, txt = 'ADD.txt') {
             displayedResults = testResults.slice(0, maxDisplayCount);
             
             // 更新结果计数显示
-            if (testResults.length <= 16) {
+            if (testResults.length <= 20) {
                 resultCount.textContent = '(共测试出 ' + testResults.length + ' 个有效IP)';
                 ipDisplayInfo.textContent = '显示全部 ' + testResults.length + ' 个测试结果';
                 showMoreSection.style.display = 'none';
@@ -4282,7 +4282,7 @@ async function bestIP(request, env, txt = 'ADD.txt') {
             }
             
             // 确定显示数量
-            const maxDisplayCount = showingAll ? displayedResults.length : Math.min(displayedResults.length, 16);
+            const maxDisplayCount = showingAll ? displayedResults.length : Math.min(displayedResults.length, 32);
             const currentResults = displayedResults.slice(0, maxDisplayCount);
             
             // 更新结果计数显示
@@ -4568,3 +4568,4 @@ async function nginx() {
 	`
     return text;
 }
+

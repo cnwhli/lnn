@@ -17,7 +17,7 @@ KEY = "n"
 #❌	强制固定路径
 PROXYIP = "us.cmliussss.net"
 #❌	更换默认内置PROXYIP
-#URL = "https://blog.cmliussss.com"	
+URL = "https://nuo.lnn.ink/"	
 #❌	主页反代伪装(乱设容易触发反诈，反代被墙的网站会加速域名被墙)
 #GO2SOCKS5 = "blog.cmliussss.com,*.ip111.cn,*google.com"	
 #❌	设置SOCKS5或HTTP变量之后，可设置强制使用socks5访问名单(设置为*可作为全局代理)

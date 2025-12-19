@@ -8,7 +8,9 @@ keep_vars = true
 UUID = "n"
 PROXYIP = "us.cmliussss.net"
 SUBNAME = "LNNCX"
+URL = "https://nuo.lnn.ink/"	
 # KV 命名空间绑定
 [[kv_namespaces]]
 binding = "KV"
 id = "1da5f898e6484beea46123148d93a8f0"
+

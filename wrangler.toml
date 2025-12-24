@@ -25,5 +25,19 @@ URL = "https://nuo.lnn.ink/"
 [[kv_namespaces]]
 binding = "KV"
 id = "aae6f52499414b2ba2a80c3ae3f535c2"
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = false
+persist = true
+head_sampling_rate = 1
 
 

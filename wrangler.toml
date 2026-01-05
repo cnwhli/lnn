@@ -46,24 +46,7 @@ URL = "https://lnn.ink/"
 #socks5://142.54.236.97:4145#OTC-US
 #socks5://199.116.114.11:4145#OTC-US"	
 #❌	设置SOCKS5或HTTP变量之后，可设置强制使用socks5访问名单(设置为*可作为全局代理)SOCK5 API https://socks5.qqqqqq.tk/
-# KV 命名空间绑定
-[[kv_namespaces]]
-#binding = "KV"
-#id = "aae6f52499414b2ba2a80c3ae3f535c2"
-[observability]
-enabled = false
-head_sampling_rate = 1
 
-[observability.logs]
-enabled = true
-head_sampling_rate = 1
-persist = true
-invocation_logs = true
-
-[observability.traces]
-enabled = false
-persist = true
-head_sampling_rate = 1
 
 
 

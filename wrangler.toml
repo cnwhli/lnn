@@ -17,7 +17,7 @@ UUID = "5757ddc5-6129-4038-947d-20854c321fbf"
 #❌	强制固定路径
 PROXYIP = "us.cmliussss.net"
 #❌	更换默认内置PROXYIP
-URL = "https://nuo.lnn.ink/"	
+URL = "https://lnn.ink/"	
 #❌	主页反代伪装(乱设容易触发反诈，反代被墙的网站会加速域名被墙)
 #GO2SOCKS5 = "socks5://192.252.209.155:14455#OTC-CA
 #socks5://104.37.135.145:4145#OTC-US
@@ -64,6 +64,7 @@ invocation_logs = true
 enabled = false
 persist = true
 head_sampling_rate = 1
+
 
 
 

@@ -11,7 +11,7 @@ KEY = "n"
 #❌	快速订阅密钥，访问/CMLiussss即可快读订阅。
 #HOST = "edt-pages.github.io"
 #❌	强制固定伪装域名
-UUID = "63c64f52-4aa6-45ff-916c-98ab286d8d59"
+UUID = "5757ddc5-6129-4038-947d-20854c321fbf"
 #❌	强制固定UUID
 #PATH = "/"
 #❌	强制固定路径
@@ -65,6 +65,7 @@ invocation_logs = true
 enabled = false
 persist = true
 head_sampling_rate = 1
+
 
 
 

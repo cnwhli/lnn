@@ -1,4 +1,4 @@
-name = "lnncxx"
+name = "lnncm1"
 main = "_worker.js"
 compatibility_date = "2025-09-07"
 
@@ -13,4 +13,5 @@ URL = "https://nuo.lnn.ink/"
 [[kv_namespaces]]
 binding = "KV"
 id = "1da5f898e6484beea46123148d93a8f0"
+
 

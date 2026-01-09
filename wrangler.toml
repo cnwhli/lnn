@@ -49,7 +49,7 @@ URL = "https://nuo.lnn.ink/"
 # KV 命名空间绑定
 [[kv_namespaces]]
 binding = "KV"
-id = "aae6f52499414b2ba2a80c3ae3f535c2"
+id = "92b8220c467847668e306a6fbe83dbeb"
 [observability]
 enabled = false
 head_sampling_rate = 1
@@ -64,6 +64,7 @@ invocation_logs = true
 enabled = false
 persist = true
 head_sampling_rate = 1
+
 
 
 
